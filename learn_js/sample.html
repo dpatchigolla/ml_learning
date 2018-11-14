@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample HTML File</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<h1> HTML and CSS starter </h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_cfnVxYXl95EfsyjHYQnnlBmOVmTqNsWdMpY7XItadu1E5Yw"
+     width="200p">
+<h2 class="ref_header"> References </h2>
+<ul>
+    <li><a href="https://www.coursera.org/learn/duke-programming-web/"> Coursera course</a></li>
+    <li><a href="http://www.dukelearntoprogram.com/course1/doc/#basichtml"> Resources</a></li>
+    <li><a href="https://codepen.io/quentinre/pen/pEoqBK"> CSS Reference</a></li>
+    <li><a href="https://www.w3schools.com/cssref/css_colors.asp"> 140 Color Names </a></li>
+</ul>
+
+
+<h2> Images Reference </h2>
+<div class="info">
+
+    <h4> IITM Logo: </h4>
+    <img src="http://www.isim.ac.in/html/images/IITMadras.gif" id="iitmlogo" width="100p">
+    <h4> Random FB image</h4>
+    <img src="https://scontent.fmaa1-3.fna.fbcdn.net/v/t1.0-0/p206x206/28058844_10104567749739701_8406615771374944256_n.jpg?_nc_cat=101&_nc_ht=scontent.fmaa1-3.fna&oh=8210462b3a14bc3328b44703ecf6fea9&oe=5C7C9800">
+</div>
+<div class="html_notes">
+    <h2>Notes about HTML:</h2>
+    <p>Div is used typically for css</p>
+    metadata tags - html, head, meta, title, css, scripts
+    <ul>
+        <h4> Unordered List:</h4>
+        <li><b>head</b> - has info about page such as css, scripts,</li>
+        <li><em>title</em> - should be within head</li>
+        <li>sectioning tags</li>
+        body - all items seen on page
+    </ul>
+</div>
+
+<div class="properties">
+    <h2> Lists and Tables:</h2>
+    <ol>
+        <h4> Ordered List: </h4>
+        <li> Image: No end tag required. src is required. A random image: <img
+                src="http://www.isim.ac.in/html/images/IITMadras.gif" width="200p"></li>
+        <li><b> Ordered list:</b> ol, Unordered list: ul</li>
+        <li> Div: Used for CSS only. Not directly used</li>
+        <li> a (anchor tag) Used for refering to an external url. href attribute is required. name is between a and /a
+        </li>
+
+    </ol>
+
+    <p> Composing
+
+    <ul>Can't put title in list. Can only have in header
+        List of lists is possible (nested lists)
+    </ul>
+    <ul>
+        <li>li - list</li>
+        <ul>
+            <li> ol - ordered</li>
+            <li>ul - unordered</li>
+        </ul>
+
+    </ul>
+
+    </p>
+    <h3> Playing with tables:</h3>
+    <table>
+        <tr>
+            <th> header 1</th>
+            <th> header 2</th>
+            <th> header 3</th>
+        </tr>
+        <tr>
+            <td> data1</td>
+            <td> data2</td>
+            <td>
+                <ol>
+                    <li> item 1</li>
+                    <li>item 2</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <h3> Nesting table inside Lists: </h3>
+    <ol>
+        <li><img width="200p" src="http://www.isim.ac.in/html/images/IITMadras.gif"></li>
+        <li><h4> Table inside nested list:</h4>
+            <ol>
+                <li>
+                    <table>
+                        <tr>
+                            <th> header 1</th>
+                            <th> header 2</th>
+
+                        </tr>
+                        <tr>
+                            <td> data1</td>
+                            <td>
+                                <ul>
+                                    <li class="nestlist">item 1</li>
+                                    <li> item 2</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</div>
+<p>Time for <b>Back to School,<em> SALES GALORE!,</em> Coupons online,</b> open early</p>
+<h2> CSS basics:</h2>
+<ol>
+    <li> selector {property: value; property2:value2}</li>
+    <li>.class {property: value}</li>
+    <li>#id {property: value}</li>
+</ol>
+<ol>
+    <li class="stylesheet"> Reference in head, with tag link. href has the name of file</li>
+    <li class="stylesheet"> selector - what element to format/style (ex: h1)
+        <ol>
+            <li class="stylesheet"> curly braces to enclose the style items</li>
+            <li class="stylesheet"> first, property to change (ex: text-align )</li>
+        </ol>
+    </li>
+</ol>
+<h4> class vs id</h4>
+<p> both class and id can be used to reference from stylesheet. class can be used for multiple items. id can be used
+    only for one single item</p>
+</body>
+</html>
