@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+   color:blue
+}
+#multiply_button {color: LightSteelBlue;
+font-size: 2em;}
+
+
+ .syntax {font-family: Courier;
+ background-color: LightSteelBlue;
+ border: solid;
+ font-size: 1.25em;
+ color: rgb(0,0,100)}

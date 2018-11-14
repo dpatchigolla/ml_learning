@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_basics</title>
+    <link rel="stylesheet" type="text/css" href="js_style.css"/>
+</head>
+<body>
+<h1> JavaScript Basics</h1>
+<div class="syntax">
+    <h2>Syntax and basic concepts</h2>
+    <p> JS is case-sensitive</p>
+    <ul>
+        <li> Declaring Variable: <em> var x = 3; </em>  Semicolon ends the statement</li>
+        <li>Expression. Declare another variable and then create expression on x and y
+            <ul>
+                <li><em> var y = 4; </em></li>
+                <li><em> var z = x + 2 * y; </em></li>
+            </ul></li>
+        <li> Update existing variable: No need of prefix <em> var</em>. Ex: <em> x = x+y;</em></li>
+        <li> Creating new 'objects': Using keyword <em>new</em>
+            <ul>
+            <li><em> var fgImg = new SimpleImage("image_path.jpg");</em></li>
+        </ul></li>
+        <li> method vs function:
+        <ul>
+            <li> Method is invoked on an object, while function is not invoked on object</li>
+            <li> <b> Method:</b> <em> var img = new SimpleImage("image.jpg");</em></li>
+            <li> <b>Function:</b> <em> print(x); </em> OR <em> var y = square(4); </em></li>
+        </ul></li>
+    </ul>
+</div>
+<h3> Some javascript (in script. not visible on web)</h3>
+<button onclick="multiply()" id="multiply_button"> Multiply </button>
+<p id="demo"></p>
+<script>
+alert("helloworld")
+
+function square(x) {
+    var ans = x * x;
+    return ans;
+}
+var y = square(4);
+alert(y)
+
+
+function multiply() {
+    var num = prompt('Enter any number:', 10);
+    var num2 = prompt('enter second number:', 2);
+    var ans = num * num2;
+    document.getElementById("demo").innerHTML = ans
+}
+
+    var fgImg = new SimpleImage("resources/trump_greenscreen.jpg");
+    var bgImg = new SimpleImage("resources/matrix.jpeg");
+
+    var w = fgImg.getWidth();
+    var h = fgImg.getHeight();
+    alert("hello")
+    window.alert(42)
+
+</script>
+</body>
+</html>
