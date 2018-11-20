@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>js_basics</title>
-    <link rel="stylesheet" type="text/css" href="js_style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/js_style.css"/>
 </head>
 <body>
 <h1> JavaScript Basics</h1>
@@ -28,13 +28,42 @@
             <li> <b> Method:</b> <em> var img = new SimpleImage("image.jpg");</em></li>
             <li> <b>Function:</b> <em> print(x); </em> OR <em> var y = square(4); </em></li>
         </ul></li>
+        <li> JS is dynamically typed language. We don't need to declare type of variables. </li>
     </ul>
 </div>
 <h3> Some javascript (in script. not visible on web)</h3>
 <button onclick="multiply()" id="multiply_button"> Multiply </button>
+
 <p id="demo"></p>
+
+<h3> For Loop:</h3>
+<ul>
+<li> for (var px of img.values()) { var newVar = 255 - px.getGreen();
+    px.setGreen(newVar)}
+
+</li>
+    <li><em> of </em> - keyword that says <em>iterator is coming next</em> -what piece to iterate on (like <em> in </em> in python) </li>
+    <li> img.values() - iterator - what to loop on</li>
+    <li> Inside curly braces - body of the loop</li>
+</ul>
+
+
+<h3> If Statement:</h3>
+if (a < b) {
+z=4;
+}
+else {
+z=3;
+}
+<ul>
+    <li> <em> && </em> for AND, <em>||</em> for OR operators</li>
+    <li> <em> else if </em> for if else if else conditions</li>
+</ul>
+
+<input type="button" value="test button" onclick="alert('clicked button')">
+
 <script>
-alert("helloworld")
+alert("helloworld");
 
 function square(x) {
     var ans = x * x;
@@ -44,21 +73,16 @@ var y = square(4);
 alert(y)
 
 
-function multiply() {
-    var num = prompt('Enter any number:', 10);
-    var num2 = prompt('enter second number:', 2);
-    var ans = num * num2;
-    document.getElementById("demo").innerHTML = ans
-}
-
-    var fgImg = new SimpleImage("resources/trump_greenscreen.jpg");
+/*    var fgImg = new SimpleImage("resources/trump_greenscreen.jpg");
     var bgImg = new SimpleImage("resources/matrix.jpeg");
 
     var w = fgImg.getWidth();
     var h = fgImg.getHeight();
     alert("hello")
-    window.alert(42)
+    window.alert(42)*/
+// Refering to a js file outside the html file
 
 </script>
+<script src="js/sample_basic_script.js"></script>
 </body>
 </html>
